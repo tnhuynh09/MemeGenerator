@@ -1,0 +1,138 @@
+body {
+    font-family: Roboto;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 10px 0px 0px 0px;
+}
+
+h2 {
+    font-size: 15px;
+    font-style: italic;
+    margin: 0px 0px 10px 0px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: white;
+}
+
+input {
+    width: 60%;
+    border-radius: 4px;
+    border-color: red;
+}
+
+button {
+    padding: 5px 15px 5px 15px;
+    color: white;
+    background: #DF2872;
+    border-radius: 3px;
+    margin: 5px 0px 0px 0px;
+  }
+  
+button:hover {
+    color: white;
+    background: #FF512F; 
+    background: -webkit-linear-gradient(to left, #DD2476, #FF512F);  
+    background: linear-gradient(to left, #DD2476, #FF512F);
+}
+
+#meme-container {
+	background: #FF512F;  
+	background: -webkit-linear-gradient(to left, #DD2476, #FF512F); 
+    background: linear-gradient(to left, #DD2476, #FF512F); 
+    padding: 5px 20px 15px 20px;
+    border-radius: 3px;
+}
+
+#meme-form {
+    font-size: 12px;
+}
+
+img {
+    border-radius: 7px;
+    max-width: 400px;
+    height: auto;
+}
+
+#meme-display-container {
+    text-align: center;
+}
+
+#meme-display {
+    margin: 20px;
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+}
+
+#hover-image {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #ffffff;
+    opacity: 50%;
+}
+
+#delete {
+    width: 100px;
+    height: 100px;
+    opacity: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#meme-display:hover #hover-image {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+#meme-display #meme-text {
+    font-family: Anton;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 10px;
+    right: 10px;      
+    text-align: center;
+    top: 3%; 
+    color: #fff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 100%;
+}
+
+#meme-display #meme-text2 {
+    font-family: Anton;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 10px;
+    right: 10px;        
+    text-align: center;
+    bottom: 4%; 
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black; 
+    font-size: 40px;
+    line-height: 100%;
+}

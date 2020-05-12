@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="meme-container">
+        <h1>MEME GENERATOR</h1>
+        <h2>Fill out the form to create your own meme!</h2>
+
+        <form id="meme-form" action="">
+            <label for="image-url">IMAGE URL</label>
+            <input type="url" id="image-url-input" name="image-url">
+            <label for="text-top">TEXT ON TOP</label>
+            <input type="text" id="text-top-input" name="text-top">
+            <label for="text-bottom">TEXT ON BOTTOM</label>
+            <input type="text" id="text-bottom-input" name="text-bottom">
+            <div>
+                <button type="submit">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="meme-display-container">
+        <div id="meme-display">
+            <img id="image" src="https://i.pinimg.com/564x/12/07/87/120787c1372c4d9f91f7193e5143e2b6.jpg">
+            <h3 id="meme-text">THIS IS A LONG DASCHUND1</h3>
+            <h3 id="meme-text2">THIS IS A LONG DASCHUND 2</h3>
+            <div id="hover-image">
+                <img id="delete" src="pinkdelete.png">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
